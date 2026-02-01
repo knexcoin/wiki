@@ -41,6 +41,8 @@
 | **Fixed Supply** | Hard cap of 210 million KNEX with halving emission |
 | **NFC Payments** | Tap-to-pay with physical KnexCoin cards |
 | **Merchant Focus** | Built for real-world commerce, not speculation |
+| **Quantum-Safe** | NIST post-quantum cryptography (FALCON, Kyber, Dilithium) from Genesis |
+| **Web3 Mail** | Encrypted decentralized messaging via KnexMail |
 
 ---
 
@@ -50,10 +52,10 @@
 
 ```bash
 # Browser Extension
-# Visit: https://knexpay.io/extension
+# Visit: https://knexpay.com/extension
 
 # Or use the PWA
-# Visit: https://knexpay.io
+# Visit: https://knexpay.com
 ```
 
 ### Run a Node
@@ -116,7 +118,7 @@ python -m src.api
 | **Node** | Rust, Tokio, Axum, RocksDB |
 | **Backend** | Python, Flask, SQLite |
 | **Frontend** | SvelteKit, TypeScript, Vite |
-| **Crypto** | Ed25519, Blake2b, secp256k1 |
+| **Crypto** | FALCON, Kyber, Dilithium (post-quantum) + Ed25519, Blake2b |
 
 ---
 
@@ -221,19 +223,37 @@ git checkout -b feature/your-feature
 
 ### 2027
 
-- [ ] Mobile apps
+- [ ] Mobile apps (iOS & Android)
 - [ ] Hardware wallet support
-- [ ] Quantum-resistant cryptography
+- [ ] KnexMail public launch
 - [ ] 10,000+ merchants
 
 ---
 
-## Links
+## Ecosystem
 
-- **Website:** [knexcoin.io](https://knexcoin.io)
-- **Wallet:** [knexpay.io](https://knexpay.io)
-- **Exchange:** [ayedex.io](https://ayedex.io)
-- **GitHub:** [github.com/knexcoin](https://github.com/knexcoin)
+| Platform | Description | Link |
+|----------|-------------|------|
+| **KnexCoin** | Main website & documentation | [knexcoin.com](https://knexcoin.com) |
+| **KnexPay** | Wallet, POS & payment gateway | [knexpay.com](https://knexpay.com) |
+| **KnexMail** | Web3 encrypted decentralized mail | [knexmail.com](https://knexmail.com) |
+| **AyeDEX** | Merchant-driven exchange | [ayedex.com](https://ayedex.com) |
+| **GitHub** | Source code & development | [github.com/knexcoin](https://github.com/knexcoin) |
+
+---
+
+## KnexMail — Web3 Encrypted Mail
+
+**KnexMail** is a decentralized, end-to-end encrypted messaging platform built on the KnexCoin network.
+
+### Features
+
+- **🔐 End-to-End Encryption** — Messages encrypted with post-quantum cryptography
+- **📭 Decentralized Storage** — No central servers; messages stored on the DAG
+- **💰 Payment Attachments** — Send KNEX directly within messages
+- **🆔 Address-Based Identity** — Your `knex_` address is your inbox
+- **🚫 No Spam** — Micro-PoW requirement prevents spam attacks
+- **🌍 Censorship Resistant** — No central authority can block messages
 
 ---
 

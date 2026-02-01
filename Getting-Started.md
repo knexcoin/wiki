@@ -15,13 +15,13 @@ This guide will help you get started with KnexCoin, whether you're a user, merch
 4. Your wallet is ready to receive KNEX
 
 #### Option 2: Progressive Web App
-1. Visit [knexpay.io](https://knexpay.io)
+1. Visit [knexpay.com](https://knexpay.com)
 2. Click "Add to Home Screen" on mobile
 3. Create or import a wallet
 4. Enable biometric authentication for security
 
 #### Option 3: Key Generator
-1. Visit the [Key Generator](https://knexpay.io/keygen.html)
+1. Visit the [Key Generator](https://knexpay.com/keygen.html)
 2. Generate an Ed25519 keypair
 3. Download your keys securely
 4. Optional: Generate a vanity address
