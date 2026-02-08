@@ -8,9 +8,10 @@ KnexCoin (KNEX) implements a carefully designed economic model with fixed supply
 
 | Parameter | Value |
 |-----------|-------|
-| **Maximum Supply** | 210,000,000 KNEX |
-| **Genesis Allocation** | 21,000,000 KNEX (10%) |
-| **PoB Emission** | 189,000,000 KNEX (90%) |
+| **Maximum Supply** | 310,000,000 KNEX |
+| **Genesis Allocation** | 21,000,000 KNEX (6.8%) |
+| **KnexMail Rewards** | 50,000,000 KNEX (16.1%) |
+| **PoB Emission** | 239,000,000 KNEX (77.1%) |
 | **Smallest Unit** | 0.0000001 KNEX (1 nano) |
 | **Divisibility** | 7 decimal places |
 
@@ -19,15 +20,21 @@ KnexCoin (KNEX) implements a carefully designed economic model with fixed supply
 ## Supply Distribution
 
 ```
-Total Supply: 210,000,000 KNEX
+Total Supply: 310,000,000 KNEX
 
 ┌─────────────────────────────────────────────────────────────────┐
-│████████████████████████████████████████████████████████████████│ 90%
+│████████████████████████████████████████████████████████████████│ 77.1%
 │                    Proof-of-Bandwidth Emission                  │
-│                        189,000,000 KNEX                         │
+│                        239,000,000 KNEX                         │
 └─────────────────────────────────────────────────────────────────┘
+┌──────────────┐
+│█████████████ │ 16.1%
+│  KnexMail    │
+│  Rewards     │
+│     50M      │
+└──────────────┘
 ┌───────┐
-│██████ │ 10%
+│██████ │ 6.8%
 │Genesis│
 │ 21M   │
 └───────┘
@@ -37,10 +44,20 @@ Total Supply: 210,000,000 KNEX
 
 | Category | Amount | Percentage | Vesting |
 |----------|--------|------------|---------|
-| Core Development | 10,500,000 | 5% | 4-year linear |
-| Ecosystem Fund | 6,300,000 | 3% | Project grants |
-| Early Validators | 2,100,000 | 1% | Bootstrap rewards |
-| Reserve | 2,100,000 | 1% | Emergency fund |
+| Core Development | 10,500,000 | 3.4% | 4-year linear |
+| Ecosystem Fund | 6,300,000 | 2.0% | Project grants |
+| Early Validators | 2,100,000 | 0.7% | Bootstrap rewards |
+| Reserve | 2,100,000 | 0.7% | Emergency fund |
+
+### KnexMail Reward Allocation
+
+| Category | Amount | Percentage | Purpose |
+|----------|--------|------------|---------|
+| **GENESIS 100** | 1,000,000 | 0.3% | First 100 users @ 10,000 KNEX each |
+| **Dynamic Rewards** | 49,000,000 | 15.8% | Auto-adjusting signup bonuses for 500M users |
+| **Vesting Pool** | Embedded | N/A | 75% of rewards >100 KNEX vest over 90 days |
+
+**When we get this right. Not if.** The entire crypto community - estimated at 500 million people worldwide - will be onboard before the end of the year. This 50M KNEX allocation (16.1% of total supply) is designed to capture the full global crypto market through viral network effects.
 
 ---
 
@@ -212,7 +229,7 @@ Network Average: ~$9.99/KNEX
 
 | Cryptocurrency | Max Supply | Emission |
 |----------------|------------|----------|
-| **KnexCoin** | 210M | 3-year halving + 0.1% tail |
+| **KnexCoin** | 310M | 3-year halving + 0.1% tail + rewards |
 | Bitcoin | 21M | 4-year halving |
 | Ethereum | Unlimited | Variable (post-merge) |
 | Nano | 133M | Fully distributed |
@@ -256,12 +273,13 @@ For most scenarios: Attack Profit < 0
 
 ### Inflation Protection
 
-- **Hard cap** - Never exceeds 210M KNEX
+- **Hard cap** - Never exceeds 310M KNEX
 - **Tail emission** - Only 0.1% annual
 - **Burns** - Slashing reduces supply
 - **Lost coins** - Estimated 1-2% permanently lost
+- **Vesting schedule** - 75% of large rewards vest over 90 days
 
-Net effective inflation after accounting for lost coins is approximately zero.
+Net effective inflation after accounting for lost coins and vesting is approximately zero.
 
 ---
 
